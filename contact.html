@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="arek0074">
+    <meta name="keywords" content="Kontakt">
+    <meta name="description"
+        content="Formularz kontaktowy oraz adres siedziby firmy">
+    <title>Kontakt | Forest Group</title>
+    <link rel="shortcut icon" type="image/jpg" href="./dist/img/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body class="contact-page">
+    <nav class="nav">
+    <div class="wrapper nav-display">
+
+        <a href="index.html" class="nav__brand">
+            <img src="./dist/img/icons/tree.svg" alt="" class="nav__logo">
+            Forest
+        </a>
+
+        <button class="burger-btn" aria-label="Menu">
+            <div class="burger-btn__box">
+                <span class="burger-btn__bars"></span>
+                <span class="burger-btn__bars-cancel"></span>
+            </div>
+        </button>
+
+        <div class="nav__items">
+            <a href="index.html#home" class="nav__item">Home</a>
+            <a href="index.html#about-us" class="nav__item">O nas</a>
+            <a href="index.html#offers" class="nav__item">Oferta</a>
+            <a href="contact.html#contact" class="nav__item">Kontakt</a>
+        </div>
+    </div>
+</nav>
+    <header class="section subpage-header">
+        <h1 class="header__title">Kontakt</h1>
+    </header>
+    <main>
+        <section class="contact section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">Napisz do <span>nas!</span></h2>
+                <form class="contact__form">
+                    <div class="contact__form-box">
+                        <label for="name">Imię:</label>
+                        <input type="text" id="name" placeholder="Podaj swoje imię">
+                        <p class="contact__form-box-error-text">Error</p>
+                    </div>
+                    <div class="contact__form-box">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="Podaj adres e-mail">
+                        <p class="contact__form-box-error-text">Error</p>
+                    </div>
+                    <div class="contact__form-box">
+                        <label for="msg">Wiadomość:</label>
+                        <textarea id="msg" cols="30" rows="10" placeholder="Wpisz swoją wiadomość"></textarea>
+                        <p class="contact__form-box-error-text">Error</p>
+                    </div>
+                    <button type="submit" class="contact__form-btn">Wyślij</button>
+
+                    <div class="contact__popup">
+                        <p class="contact__popup-text">Wiadomość wysłana!</p>
+                        <button class="contact__popup-close">Zamknij</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="localization section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">Znajdź <span>nas!</span></h2>
+                <div class="localization__boxes">
+                    <div class="localization-adress">
+                        <div class="localization__box">
+                            <img src="./dist/img/icons/map-pin.svg" alt="">
+                            <div class="localization__box-secondary">
+                                <h3 class="localization__box-title">Adres</h3>
+                                <p class="localization__box-data">ul. Jasnogórska 2, 30-000 Kraków</p>
+                            </div>
+                        </div>
+                        <div class="localization__box">
+                            <img src="./dist/img/icons/phone.svg" alt="">
+                            <div class="localization__box-secondary">
+                                <h3 class="localization__box-title">Telefon</h3>
+                                <p class="localization__box-data"><a class="localization__box-data-details"
+                                        href="tel:+48 123 456 789">+48
+                                        123 456 789</a></p>
+                            </div>
+                        </div>
+                        <div class="localization__box">
+                            <img src="./dist/img/icons/mail.svg" alt="">
+                            <div class="localization__box-secondary">
+                                <h3 class="localization__box-title">E-mail</h3>
+                                <p class="localization__box-data"><a class="localization__box-data-details"
+                                        href="mailto:forest@group.com">forest@group.com</a></p>
+                            </div>
+                        </div>
+                        <div class="localization__box socials">
+
+                            <a href="#"><span class="socials__icon socials__icon-fb"></span></a>
+                            <a href="#"><span class="socials__icon socials__icon-ig"></span></a>
+                            <a href="#"><span class="socials__icon socials__icon-tiktok"></span></a>
+
+                        </div>
+                    </div>
+                    <div class="localization-google-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8918258821927!2d19.890960622110654!3d50.088312143748084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1708454258268!5m2!1spl!2spl"
+                            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+    <div class="wrapper">
+
+        <div class="footer__brand">
+            <h2 class="footer__company">
+                <a href="index.html"><img src="./dist/img/icons/tree.svg" alt="" class="footer__company-logo">
+                    Forest</a>
+            </h2>
+        </div>
+        <div class="footer__boxes">
+            <div class="footer__box">
+                <h3 class="footer__box-title">O nas</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item"><a href="#">Historia</a></li>
+                    <li class="footer__box-list-item"><a href="#">Parki</a></li>
+                    <li class="footer__box-list-item"><a href="#">Opinie</a></li>
+                </ul>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__box-title">Nasza firma</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item"><a href="#">Praca</a></li>
+                    <li class="footer__box-list-item"><a href="#">Kadry</a></li>
+                    <li class="footer__box-list-item"><a href="#">Zarząd</a></li>
+                </ul>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__box-title">Dokumenty</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item"><a href="#">Wnioski</a></li>
+                    <li class="footer__box-list-item"><a href="#">Rezerwacje</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Forest Group Company Ltd.</p>
+
+</footer>
+    <script src="./dist/js/script.min.js"></script>
+</body>
+
+</html>
