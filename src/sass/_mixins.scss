@@ -1,0 +1,22 @@
+@use 'colors' as *;
+
+@mixin choiceBtn {
+	background-color: transparent;
+	border: 1px solid $light-white;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+	transition: color 0.3s, background-color 0.3s, border 0.3s, box-shadow 0.3s;
+	cursor: pointer;
+}
+
+@mixin choiceBtnSpecial {
+	background-color: $main-color;
+	border: 1px solid #24ca67;
+	box-shadow: 0px 3px 10px $main-color;
+}
+
+@mixin choiceBtnHover {
+	color: $pure-white;
+	background-color: $secondary-color;
+	border: 1px solid $secondary-color;
+	box-shadow: 0px 3px 10px $secondary-color;
+}

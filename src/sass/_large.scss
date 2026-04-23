@@ -1,0 +1,147 @@
+@use 'colors' as *;
+
+@media (min-width: 992px) {
+	html {
+		--fontSizeLogo: 2.8rem;
+	}
+
+	.nav {
+		transition: background-color 0.6s;
+
+		.burger-btn {
+			display: none;
+		}
+
+		&__items {
+			font-size: 0;
+		}
+		&__item {
+			padding: 1.5em;
+			font-size: 1.8rem;
+			color: $dark-gray;
+			transition: color 0.3s, background-color 0.3s;
+		}
+	}
+
+	.scroll-spy-active {
+		color: $pure-white;
+		background-color: $pure-black;
+	}
+
+	.header {
+		height: clamp(25rem, 40vh, 40rem);
+		background-image: $black-gradient-shadow, url('../img/jungle_1280.jpg');
+
+		&__title {
+			font-size: 3.8rem;
+		}
+	}
+
+	.section-heading {
+		font-size: 3.6rem;
+	}
+
+	.about-us {
+		&__title {
+			font-size: 2.4rem;
+		}
+
+		&__text {
+			font-size: 1.8rem;
+			line-height: 1.8em;
+		}
+	}
+
+	.hero-img {
+		min-height: 30rem;
+
+		&__title {
+			font-size: 3rem;
+			letter-spacing: 0.1em;
+		}
+	}
+
+	.offers {
+		&-description {
+			font-size: 2rem;
+		}
+		&__boxes {
+			justify-content: space-between;
+		}
+
+		&__box {
+			margin: 3em 0;
+			width: clamp(25rem, 30%, 60rem);
+			&-title {
+				font-size: 2.8rem;
+			}
+
+			&-price {
+				font-size: 4.5rem;
+			}
+
+			.offers__list,
+			.active-item::before,
+			.disabled-item::before,
+			.offers__btn {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.footer {
+		.wrapper {
+			display: flex;
+		}
+
+		&__brand {
+			width: 50%;
+		}
+
+		&__company {
+			margin-bottom: 0;
+			font-size: 5rem;
+
+			&-logo {
+				height: 4rem;
+			}
+		}
+
+		&__boxes {
+			width: 50%;
+		}
+
+		&__bottom-text {
+			font-size: 1.8rem;
+		}
+	}
+
+	.subpage-header {
+		.header__title {
+			font-size: 5rem;
+		}
+	}
+
+	.offer {
+		&__title {
+			font-size: 3.6rem;
+		}
+
+		&__price {
+			font-size: 4.8rem;
+		}
+
+		.offers__list-item {
+			font-size: 2rem;
+		}
+
+		&__description {
+			font-size: 1.8rem;
+		}
+
+		&__btn {
+			width: 20%;
+			font-size: 1.8rem;
+		}
+	}
+}

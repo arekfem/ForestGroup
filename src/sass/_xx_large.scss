@@ -1,0 +1,16 @@
+@use 'colors' as *;
+
+@media (min-width: 1400px) {
+	.header {
+		background-image: $black-gradient-shadow, url('../img/jungle_1920.jpg');
+		&__title {
+			font-size: 4.5rem;
+		}
+	}
+
+	.footer {
+		.wrapper {
+			padding: 4em 0em;
+		}
+	}
+}

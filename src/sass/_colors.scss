@@ -1,0 +1,19 @@
+$main-color: #2ade72;
+$secondary-color: #12803e;
+$dark-green: #0f360fcc;
+$light-gray: #f5f5f5;
+$medium-gray: #6f6f6f;
+$dark-gray: #414141;
+$light-white: #f0f0f0;
+$pure-white: #fff;
+$white-antiflesh: #fafafa;
+$pure-black: #000;
+
+$dark-green-gradient: linear-gradient(30deg, #000000, #166d3b);
+$light-green-gradient: linear-gradient(
+	45deg,
+	rgba(18, 38, 8, 0.64),
+	rgba(8, 59, 15, 0.39)
+);
+$black-shadow: rgba(0, 0, 0, 0.65);
+$black-gradient-shadow: linear-gradient($black-shadow, $black-shadow);

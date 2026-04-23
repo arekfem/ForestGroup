@@ -1,0 +1,31 @@
+@use 'colors' as *;
+
+@media (min-width: 1200px) {
+	.about-us {
+		&__text {
+			line-height: 2em;
+		}
+	}
+
+	.hero-img {
+		&__title {
+			font-size: 4rem;
+		}
+	}
+
+	.footer {
+		.wrapper {
+			padding: 4em 2em 2em;
+		}
+
+		&__box {
+			&-title {
+				font-size: 2.5rem;
+			}
+
+			&-list {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}

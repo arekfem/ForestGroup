@@ -1,0 +1,184 @@
+@use 'colors' as *;
+
+@media (min-width: 213px) {
+	.header {
+		&__title {
+			font-size: 2.4rem;
+		}
+
+		&__description {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (min-width: 300px) and (max-width: 382px) {
+	.header {
+		&__text {
+			margin: 0;
+			width: 24rem;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.about-us {
+		&__title {
+			font-size: 2.2rem;
+		}
+
+		&__text {
+			font-size: 1.6rem;
+		}
+	}
+
+	.hero-img {
+		&__title {
+			font-size: 2rem;
+		}
+	}
+
+	.footer {
+		&__company {
+			font-size: 3.6rem;
+			&-logo {
+				height: 2.8rem;
+			}
+		}
+
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__box {
+			&-title {
+				font-size: 2.2rem;
+			}
+			&-list {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.offer {
+		padding: 2em;
+		&__img {
+			border-radius: 1em;
+		}
+
+		&__box {
+			padding: 2em 0;
+		}
+
+		&__description {
+			padding: 0;
+		}
+
+		&__btn {
+			margin: 1em auto 0;
+			width: 50%;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.nav {
+		.burger-btn {
+			background: none;
+			border: 1px solid transparent;
+			z-index: 1000;
+
+			&__box {
+				position: relative;
+				width: 26px;
+				height: 19px;
+			}
+
+			&__bars,
+			&__bars::before,
+			&__bars::after,
+			&__bars-cancel,
+			&__bars-cancel::after {
+				position: absolute;
+				right: 0;
+				width: 100%;
+				height: 3px;
+				content: '';
+			}
+
+			&__bars,
+			&__bars::before,
+			&__bars::after {
+				top: 0;
+				background-color: $dark-gray;
+				transition: opacity 0.3s;
+			}
+
+			&__bars {
+				&::before {
+					top: 8px;
+				}
+
+				&::after {
+					top: 16px;
+				}
+			}
+
+			&__bars-cancel,
+			&__bars-cancel::after {
+				background-color: $pure-white;
+				transition: opacity 0.2s;
+				// opacity: 0;
+			}
+
+			&__bars-cancel {
+				top: 8px;
+				transform: rotate(45deg);
+				opacity: 0;
+
+				&::after {
+					top: 0;
+					transform: rotate(90deg);
+				}
+			}
+
+			.hide-btn {
+				opacity: 0;
+			}
+
+			.show-btn {
+				opacity: 1;
+			}
+		}
+
+		&__items {
+			position: fixed;
+			top: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 5em 0;
+			width: 100%;
+			height: 100dvh;
+			transform: translateX(100%);
+			background-color: $dark-green;
+			backdrop-filter: blur(10px);
+			transition: transform 0.5s;
+			z-index: 100;
+		}
+
+		&--active {
+			transform: translateX(0);
+			overflow-y: auto;
+		}
+
+		&__item {
+			position: relative;
+			margin: 0.5em 0;
+			padding: 0.5em 2em;
+			font-size: 3.1rem;
+			color: $pure-white;
+		}
+	}
+}

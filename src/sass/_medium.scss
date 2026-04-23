@@ -1,0 +1,103 @@
+@use 'colors' as *;
+
+@media (min-width: 768px) {
+	.header {
+		&__text {
+			align-items: flex-start;
+		}
+
+		&__title {
+			font-size: 3.2rem;
+		}
+
+		&__description {
+			font-size: 2.4rem;
+		}
+	}
+
+	.about-us {
+		&__box {
+			display: flex;
+		}
+
+		.img {
+			padding-right: 3em;
+			width: 50%;
+		}
+	}
+
+	.hero-img {
+		background-image: $light-green-gradient, url('../img/girl_1280.jpg');
+
+		&__title {
+			font-size: 2.5rem;
+		}
+	}
+
+	.offers {
+		&__box {
+			width: clamp(25rem, 40%, 60rem);
+			&-title {
+				font-size: 2.4rem;
+			}
+
+			&-price {
+				margin: 0.5em 0;
+				font-size: 4rem;
+			}
+
+			.offers__list,
+			.active-item::before,
+			.disabled-item::before,
+			.offers__btn {
+				font-size: 1.6rem;
+			}
+
+			.active-item::before {
+				line-height: 1.9rem;
+			}
+		}
+	}
+
+	.offer {
+		// display: flex;
+		&__box-big {
+			display: flex;
+			margin-bottom: 2em;
+		}
+
+		&__box {
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+		}
+
+		&__img,
+		&__box {
+			width: 50%;
+		}
+
+	}
+	.contact {
+		&__form-btn {
+			width: 20rem;
+		}
+	}
+
+	.localization {
+		&__boxes {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&-adress {
+			margin-bottom: 0;
+			padding-right: 1em;
+		}
+
+		&-google-map {
+			width: 65%;
+		}
+	}
+}
